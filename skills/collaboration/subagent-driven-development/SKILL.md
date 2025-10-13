@@ -47,15 +47,25 @@ Task tool (general-purpose):
     You are implementing Task N from [plan-file].
 
     Read that task carefully. Your job is to:
-    1. Implement exactly what the task specifies
-    2. Write tests (following TDD if task says to)
-    3. Verify implementation works
-    4. Commit your work
-    5. Report back
+    1. Read relevant skills for this task:
+       - ALWAYS: skills/code-quality/typescript-type-safety/SKILL.md
+       - ALWAYS: skills/collaboration/capturing-learnings/SKILL.md
+       - If writing tests: skills/testing/test-driven-development/SKILL.md
+       - If setting up test data: skills/testing/progressive-test-composition/SKILL.md
+       - If debugging: skills/debugging/systematic-debugging/SKILL.md
+    2. Review relevant learnings from docs/learning-queue.md (included in task context)
+    3. When stuck: Search docs/learning-queue.md + CLAUDE.md for existing solutions
+    4. Implement exactly what the task specifies
+    5. Write tests (following TDD if task says to)
+    6. Verify implementation works (run typecheck, lint, tests)
+    7. Reflect: What non-trivial challenges (3+ approaches) did I encounter?
+    8. Capture learnings: Append to docs/learning-queue.md if any
+    9. Commit your work
+    10. Report back
 
     Work from: [directory]
 
-    Report: What you implemented, what you tested, test results, files changed, any issues
+    Report: What you implemented, what you tested, test results, files changed, learnings captured
 ```
 
 **Subagent reports back** with summary of work.
@@ -180,6 +190,7 @@ Done!
 **Pairs with:**
 - skills/collaboration/writing-plans (creates the plan)
 - skills/collaboration/requesting-code-review (review template)
+- skills/collaboration/capturing-learnings (builds institutional memory)
 - skills/testing/test-driven-development (subagents follow this)
 
 **Alternative to:**

@@ -46,6 +46,27 @@ Assume they are a skilled developer, but know almost nothing about our toolset o
 ---
 ```
 
+## Synthesizing Learning Queue
+
+**Before writing tasks, read `docs/learning-queue.md`:**
+
+1. **Read entire queue**: All learnings, not just recent ones
+2. **Analyze relevance**: Which learnings apply to this feature?
+   - Layer matching (db/service/domain/ui/test/e2e)
+   - Keyword matching (authorization, transactions, type safety, etc.)
+   - Pattern matching (similar problems to what this feature will encounter)
+3. **Synthesize per-task**: For each task, include relevant learnings in task context
+
+**Don't:**
+- Copy-paste entire learning entries verbatim
+- Include irrelevant learnings "just in case"
+- Skip synthesis step thinking "subagent will search"
+
+**Do:**
+- Digest learnings into actionable context
+- Attach specific learnings to the tasks they're relevant for
+- Combine related learnings into coherent guidance
+
 ## Task Structure
 
 ```markdown
@@ -55,6 +76,10 @@ Assume they are a skilled developer, but know almost nothing about our toolset o
 - Create: `exact/path/to/file.py`
 - Modify: `exact/path/to/existing.py:123-145`
 - Test: `tests/exact/path/to/test.py`
+
+**Relevant Learnings:** (from docs/learning-queue.md)
+- [Synthesized learning 1 relevant to this task]
+- [Synthesized learning 2 relevant to this task]
 
 **Step 1: Write the failing test**
 
