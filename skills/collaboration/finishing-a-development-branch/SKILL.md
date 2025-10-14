@@ -1,8 +1,8 @@
 ---
 name: Finishing a Development Branch
 description: Complete feature development with structured options for merge, PR, or cleanup
-when_to_use: After completing implementation. When all tests passing. At end of executing-plans or subagent-driven-development. When feature work is done.
-version: 1.0.0
+when_to_use: when implementation is complete, all tests pass, and you need to decide how to integrate the work
+version: 1.1.0
 ---
 
 # Finishing a Development Branch

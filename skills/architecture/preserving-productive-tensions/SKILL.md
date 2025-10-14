@@ -1,8 +1,8 @@
 ---
 name: Preserving Productive Tensions
 description: Recognize when disagreements reveal valuable context, preserve multiple valid approaches instead of forcing premature resolution
-when_to_use: Going back and forth between options. Both approaches seem equally good. Keep changing your mind. About to ask "which is better?" but sense both optimize for different things. Stakeholders want conflicting things (both valid).
-version: 1.0.0
+when_to_use: when oscillating between equally valid approaches that optimize for different legitimate priorities
+version: 1.1.0
 ---
 
 # Preserving Productive Tensions

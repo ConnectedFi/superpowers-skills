@@ -1,8 +1,8 @@
 ---
 name: Systematic Debugging
 description: Four-phase debugging framework that ensures root cause investigation before attempting fixes. Never jump to solutions.
-when_to_use: When encountering any technical issue, bug, test failure, or unexpected behavior. When tempted to quick-fix symptoms. When debugging feels chaotic or circular. When fixes don't stick. Before proposing any fix. When you notice yourself jumping to solutions.
-version: 2.0.0
+when_to_use: when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+version: 2.1.0
 languages: all
 ---
 

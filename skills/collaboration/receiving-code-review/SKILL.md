@@ -1,8 +1,8 @@
 ---
 name: Code Review Reception
 description: Receive and act on code review feedback with technical rigor, not performative agreement or blind implementation
-when_to_use: When receiving code review feedback from your human partner or external reviewers. Before implementing review suggestions. When PR comments arrive. When feedback seems wrong or unclear.
-version: 1.0.0
+when_to_use: when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable
+version: 1.1.0
 ---
 
 # Code Review Reception

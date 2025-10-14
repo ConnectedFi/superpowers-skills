@@ -1,8 +1,8 @@
 ---
 name: Remembering Conversations
 description: Search previous Claude Code conversations for facts, patterns, decisions, and context using semantic or text search
-when_to_use: When your human partner mentions "we discussed this before". When debugging similar issues. When looking for architectural decisions or code patterns from past work. Before reinventing solutions. When you need to find a specific git SHA or error message.
-version: 1.0.0
+when_to_use: when partner mentions past discussions, debugging familiar issues, or seeking historical context about decisions and patterns
+version: 1.1.0
 ---
 
 # Remembering Conversations

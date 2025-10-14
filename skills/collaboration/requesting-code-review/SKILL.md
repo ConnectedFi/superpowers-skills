@@ -1,8 +1,8 @@
 ---
 name: Requesting Code Review
 description: Dispatch code-reviewer subagent to review implementation against plan or requirements before proceeding
-when_to_use: After completing a task. After major feature implementation. Before merging. When executing plans (after each task). When stuck and need fresh perspective.
-version: 1.0.0
+when_to_use: when completing tasks, implementing major features, or before merging, to verify work meets requirements
+version: 1.1.0
 ---
 
 # Requesting Code Review

@@ -1,8 +1,8 @@
 ---
 name: Executing Plans
 description: Execute detailed plans in batches with review checkpoints
-when_to_use: When have a complete implementation plan to execute. When implementing in separate session from planning. When your human partner points you to a plan file to implement.
-version: 2.1.0
+when_to_use: when partner provides a complete implementation plan to execute in controlled batches with review checkpoints
+version: 2.2.0
 ---
 
 # Executing Plans

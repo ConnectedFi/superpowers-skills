@@ -1,8 +1,8 @@
 ---
 name: Writing Plans
 description: Create detailed implementation plans with bite-sized tasks for engineers with zero codebase context
-when_to_use: After brainstorming/design is complete. Before implementation begins. When delegating to another developer or session. When brainstorming skill hands off to planning.
-version: 2.0.0
+when_to_use: when design is complete and you need detailed implementation tasks for engineers with zero codebase context
+version: 2.1.0
 ---
 
 # Writing Plans

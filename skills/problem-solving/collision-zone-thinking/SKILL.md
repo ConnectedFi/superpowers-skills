@@ -1,8 +1,8 @@
 ---
 name: Collision-Zone Thinking
 description: Force unrelated concepts together to discover emergent properties - "What if we treated X like Y?"
-when_to_use: Can't find approach that fits your problem. Conventional solutions feel inadequate. Need innovative solution. Stuck thinking inside one domain. Want breakthrough, not incremental improvement.
-version: 1.0.0
+when_to_use: when conventional approaches feel inadequate and you need breakthrough innovation by forcing unrelated concepts together
+version: 1.1.0
 ---
 
 # Collision-Zone Thinking

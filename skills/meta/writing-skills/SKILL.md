@@ -1,8 +1,8 @@
 ---
 name: Writing Skills
 description: TDD for process documentation - test with subagents before writing, iterate until bulletproof
-when_to_use: When you discover a technique, pattern, or tool worth documenting for reuse. When editing existing skills. When asked to modify skill documentation. When you've written a skill and need to verify it works before deploying.
-version: 5.0.0
+when_to_use: when creating new skills, editing existing skills, or verifying skills work before deployment
+version: 5.1.0
 languages: all
 ---
 
@@ -97,8 +97,8 @@ ${SUPERPOWERS_SKILLS_ROOT}
 ---
 name: Human-Readable Name
 description: One-line summary of what this does
-when_to_use: Symptoms and situations when you need this (CSO-critical)
-version: 1.0.0
+when_to_use: when [trigger/situation]
+version: 5.1.0
 languages: all | [typescript, python] | etc
 dependencies: (optional) Required tools/libraries
 ---
@@ -137,15 +137,33 @@ Concrete results
 
 ### 1. Rich when_to_use
 
-Include SYMPTOMS not just abstract use cases:
+**Purpose:** Claude reads when_to_use to decide which skills to load for a given task. Make it answer: "Should I read this skill right now?"
+
+**Format:** Start with "when" to complete "Use [skill-path] when [your text]"
+
+**Content:**
+- Use concrete triggers, symptoms, and situations that signal this skill applies
+- Describe the *problem* (race conditions, inconsistent behavior) not *language-specific symptoms* (setTimeout, sleep)
+- Keep triggers technology-agnostic unless the skill itself is technology-specific
+- If skill is technology-specific, make that explicit in the trigger
 
 ```yaml
-# ❌ BAD: Too abstract
+# ❌ BAD: Too abstract, doesn't start with "when"
 when_to_use: For async testing
 
-# ✅ GOOD: Symptoms and context
-when_to_use: When tests use setTimeout/sleep and are flaky, timing-dependent,
-  pass locally but fail in CI, or timeout when run in parallel
+# ❌ BAD: Mentions technology but skill isn't specific to it
+when_to_use: when tests use setTimeout/sleep and are flaky
+
+# ✅ GOOD: Starts with "when", describes problem not language symptom
+when_to_use: when tests have race conditions, timing dependencies, or pass/fail inconsistently
+
+# ✅ GOOD: Technology-specific skill with explicit trigger
+when_to_use: when using React Router and handling authentication redirects
+```
+
+**Example find-skills output:**
+```
+Use skills/testing/condition-based-waiting/SKILL.md when tests have race conditions, timing dependencies, or pass/fail inconsistently
 ```
 
 ### 2. Keyword Coverage
@@ -484,8 +502,7 @@ Make it easy for agents to self-check when rationalizing:
 Add to when_to_use: symptoms of when you're ABOUT to violate the rule:
 
 ```yaml
-when_to_use: Every feature and bugfix. When you wrote code before tests.
-  When you're tempted to test after. When manually testing seems faster.
+when_to_use: when implementing any feature or bugfix, before writing implementation code
 ```
 
 ## RED-GREEN-REFACTOR for Skills

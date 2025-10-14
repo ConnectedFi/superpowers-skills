@@ -1,8 +1,8 @@
 ---
 name: Inversion Exercise
 description: Flip core assumptions to reveal hidden constraints and alternative approaches - "what if the opposite were true?"
-when_to_use: Stuck on assumptions you can't question. Solution feels forced. "This is how it must be done" thinking. Want to challenge conventional wisdom. Need fresh perspective on problem.
-version: 1.0.0
+when_to_use: when stuck on unquestioned assumptions or feeling forced into "the only way" to do something
+version: 1.1.0
 ---
 
 # Inversion Exercise
